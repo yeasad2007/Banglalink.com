@@ -345,24 +345,18 @@
 <body>
 
     <!-- ব্যানার বিজ্ঞাপন শুরু -->
-    
-<div class="banner-ad-container">
-    <!-- Adsterra Banner Ad Code -->
-    <script type="text/javascript">
-        atOptions = {
-            'key' : 'f6ceb07850df1ce272155e0ad35e8acb',
-            'format' : 'iframe',
-            'height' : 90,
-            'width' : 728,
-            'params' : {}
-        };
-    </script>
-    <script type="text/javascript" src="//www.highperformanceformat.com/f6ceb07850df1ce272155e0ad35e8acb/invoke.js"></script>
-
-    <!-- Adsterra Secondary Banner Ad -->
-    <script type='text/javascript' src='//pl26622385.profitableratecpm.com/bb/ef/be/bbefbecb892d45aa25c96f146bdce75b.js'></script>
+    <div class="banner-ad-container">
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'f6ceb07850df1ce272155e0ad35e8acb',
+		'format' : 'iframe',
+		'height' : 90,
+		'width' : 728,
+		'params' : {}
+	};
+</script>
+<script type="text/javascript" src="//www.highperformanceformat.com/f6ceb07850df1ce272155e0ad35e8acb/invoke.js"></script>
 </div>
-
     <!-- ব্যানার বিজ্ঞাপন শেষ -->
 
     <div class="container">
@@ -404,17 +398,16 @@
             <button id="confirmButton" class="action-button">নিশ্চিত করুন</button>
         </div>
 
-   <script type="text/javascript">
-	atOptions = {
-		'key' : '7132ac6dbb3cdc71db98dda1eb48c773',
-		'format' : 'iframe',
-		'height' : 250,
-		'width' : 300,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/7132ac6dbb3cdc71db98dda1eb48c773/invoke.js"></script>
+        <p id="messageArea" class="message-area"></p>
+
+    </div>
+
+    <!-- সোশ্যাল বার বিজ্ঞাপন প্লেসহোল্ডার শুরু -->
+    <div class="social-bar-ad-placeholder">
+<script type='text/javascript' src='//pl26622385.profitableratecpm.com/bb/ef/be/bbefbecb892d45aa25c96f146bdce75b.js'></script>
+</div>
     <!-- সোশ্যাল বার বিজ্ঞাপন প্লেসহোল্ডার শেষ -->
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const simButtons = document.querySelectorAll('.sim-button');
@@ -455,9 +448,9 @@
                 let shareText;
 
                 if (sharerName) {
-                    shareText = `"${sharerName}" আপনাকে এই অফারটি নিতে আমন্ত্রণ জানাচ্ছেন! আমি আমার সিমের জন্য একটি দারুণ অফার পেয়েছি। আপনিও লিঙ্কে ক্লিক করে ৫ জিবি ফ্রি ইন্টারনেট পেতে পারেন!`;
+                    shareText = `"${sharerName}" আপনাকে এই অফারটি নিতে আমন্ত্রণ জানাচ্ছেন! আমি আমার ${selectedSim} সিমের জন্য একটি দারুণ অফার পেয়েছি। আপনিও লিঙ্কে ক্লিক করে ৫ জিবি ফ্রি ইন্টারনেট পেতে পারেন!`;
                 } else {
-                    shareText = `দারুণ খবর! আমি আমার সিমের জন্য একটি বিশেষ অফার পেয়েছি। আপনিও লিঙ্কে ক্লিক করে ৫ জিবি ফ্রি ইন্টারনেট পেতে পারেন!`;
+                    shareText = `দারুণ খবর! আমি আমার ${selectedSim} সিমের জন্য একটি বিশেষ অফার পেয়েছি। আপনিও লিঙ্কে ক্লিক করে ৫ জিবি ফ্রি ইন্টারনেট পেতে পারেন!`;
                 }
 
                 const shareData = {
@@ -472,10 +465,6 @@
                         console.log('Share action completed or dialog dismissed by user.');
                         messageArea.textContent = 'শেয়ার করার পর, আপনার নম্বর দিন এবং ৫ জিবি ফ্রি ইন্টারনেট বুঝে নিন।';
                         messageArea.className = 'message-area success';
-                setTimeout(() => {
-                    window.location.href = 'https://www.profitableratecpm.com/fv4tg1kyd?key=53969fd2829b6dc02fe60bdebfa2c6d6';
-                }, 3000);
-
                         hasShared = true;
                         phoneInputSection.style.display = 'flex';
                         phoneNumberInput.focus();
@@ -535,10 +524,6 @@
 
                 messageArea.textContent = `ধন্যবাদ! আপনার ${selectedSim} নম্বরে (${phoneNumber}) ৭ দিনের মধ্যে ৫ জিবি ইন্টারনেট পাঠানো হবে।`;
                 messageArea.className = 'message-area success';
-                setTimeout(() => {
-                    window.location.href = 'https://www.profitableratecpm.com/fv4tg1kyd?key=53969fd2829b6dc02fe60bdebfa2c6d6';
-                }, 3000);
-
 
                 phoneNumberInput.disabled = true;
                 confirmButton.disabled = true;
@@ -547,16 +532,12 @@
                 shareButton.disabled = true; 
 
                 console.log(`Offer claimed for SIM: ${selectedSim}, Sharer: ${sharerNameInput.value.trim()}, Phone: ${phoneNumber}`);
+
+                // Redirect to Adsterra Direct Link
+                window.location.href = "https://www.profitableratecpm.com/wwkxk2vx?key=b211d5867948010314ec265af4532424";
             });
         });
     </script>
-
-
-<!-- Hidden Banglalink Branding for Share Preview -->
-<div style="display: none;">
-    <img src="https://example.com/banglalink-logo.png" alt="Banglalink Logo">
-    <h1>ঈদ স্পেশাল বাংলালিংক ফ্রি অফার</h1>
-</div>
 
 </body>
 </html>
